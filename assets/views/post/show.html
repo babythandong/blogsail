@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col-sm-8" ng-repeat="user in users">
+        <h3>
+            {{user.name}}
+            <a href="/user/edit/{{user.id}}" class="pull-right btn btn-primary btn-xs"><i class="glyphicon glyphicon-pencil"></i></a>
+            <a ng-click="remove(user.id)" class="pull-right btn btn-primary btn-xs"><i class="glyphicon glyphicon-remove"></i></a>
+        </h3>
+        <p>{{user.username}}</p>
+        <hr>
+    </div>
+</div>
